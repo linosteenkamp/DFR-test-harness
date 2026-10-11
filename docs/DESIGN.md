@@ -61,7 +61,7 @@ door or plant pot.
              │                       │
              └── adapter cable ──────┤ 2×10 DUT connector
                                      ├── relay: DUT power cut
-                                     ├── INA226: DUT supply V/I
+                                     ├── INA226 ×2: DUT USB 5 V and 24 V V/I
                                      ├── ADS1115: rail sense
                                      ├── MCP4725 ×2: analog stimulus
                                      └── light / hall / temp sensors
@@ -163,8 +163,9 @@ Every channel has a **330 Ω series resistor** and a **3.3 V clamp** on the
 fixture board. DUT signals are 3.3 V logic only. Anything else (24 V, the 5 V
 rail) goes through the ADS1115 with dividers, never directly to the Pico.
 
-The I²C bus on the fixture (Pico GP4/GP5) carries the INA226, ADS1115,
-two MCP4725 DACs and the DS18B20 (1-Wire on a spare GPIO).
+The I²C bus on the fixture (Pico GP4/GP5) carries two INA226s, the ADS1115
+and two MCP4725 DACs; the DS18B20 is on 1-Wire (GP15). The full pin map,
+addresses and wiring are in [HARDWARE.md](../HARDWARE.md).
 
 ### 4.2 DUT connector (2×10 IDC, 2.54 mm)
 
@@ -173,7 +174,7 @@ routes its DUT pins onto this connector.
 
 | Pin | Signal | Pin | Signal |
 |-----|--------|-----|--------|
-| 1 | `VSW` switched DUT supply (≤5 V, ≤1 A, through the relay) | 2 | GND |
+| 1 | `VSW` switched DUT 5 V (same rail as the DUT's USB VBUS, through relay ch1 NC; ≤1 A) | 2 | GND |
 | 3 | `SENSE_A` (ADS1115 A0, ÷2: up to 6.6 V) | 4 | `SENSE_B` (ADS1115 A1, ÷2) |
 | 5 | CH1 | 6 | CH2 |
 | 7 | CH3 | 8 | CH4 |
@@ -296,7 +297,7 @@ signals:                                    # DUT gpio → fixture channel
   en:       { gpio: 20, ch: 3,  mode: capture, active: low }
   led:      { gpio: 2,  ch: 4,  mode: capture }
 sensors:
-  led_light: { type: temt6000, adc: SENSE_B }
+  led_light: { type: temt6000, adc: ads1115.a2 }
   home:      { type: hall, ch: 5 }
   driver_t:  { type: ds18b20 }
 wiring:                                     # §7.1 expectations
