@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1000" height="780" viewBox="0 0 1000 780" role="img" aria-label="Fixture signal wiring. Pico GP6 to GP14 are channels 1 to 9 and GP26 to GP28 are ADC-capable channels 10 to 12; each passes a 330 ohm resistor and a BAT54S clamp to its IDC pin. GP4 and GP5 form the I2C bus to two INA226s, an ADS1115 and two MCP4725 DACs. GP15 is 1-Wire, GP16 and GP17 drive the relays, GP18 takes the INA226 alert. The 2x10 IDC pinout is shown on the right.">
+<style>
+  svg { color: #34464c; font-family: "IBM Plex Mono", ui-monospace, Menlo, Consolas, monospace; }
+  text { font-size: 12px; fill: currentColor; }
+  .t-strong { font-family: "IBM Plex Sans", -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; font-size: 13px; font-weight: 600; }
+  .t-muted { fill: #5b6b70; }
+  .new { color: #0b7a84; }
+  .new text { fill: #0b7a84; }
+  .warn { color: #9a5b00; }
+</style>
+<rect width="100%" height="100%" fill="#ffffff"/>
+<defs><g id="gnd"><line x1="0" y1="0" x2="0" y2="8" stroke="currentColor" stroke-width="1.6"/><line x1="-9" y1="8" x2="9" y2="8" stroke="currentColor" stroke-width="1.6"/><line x1="-6" y1="12" x2="6" y2="12" stroke="currentColor" stroke-width="1.6"/><line x1="-3" y1="16" x2="3" y2="16" stroke="currentColor" stroke-width="1.6"/></g></defs><g class="new" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="300" y="60" width="180" height="500" rx="3"/></g>
+<text x="390" y="52" text-anchor="middle" class="t-strong">Raspberry Pi Pico (RP2040)</text>
+<g class="new"><text x="472" y="104" text-anchor="end">GP6</text></g>
+<g class="new" fill="none" stroke="currentColor" stroke-width="1.6"><polyline points="480,100 540,100"/></g>
+<g class="new" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="540" y="93" width="44" height="14" rx="1"/></g>
+<g class="new" fill="none" stroke="currentColor" stroke-width="1.6"><polyline points="584,100 640,100"/></g>
+<text x="648" y="104">CH1 → IDC 5</text>
+<g class="new"><text x="472" y="130" text-anchor="end">GP7</text></g>
+<g class="new" fill="none" stroke="currentColor" stroke-width="1.6"><polyline points="480,126 540,126"/></g>
+<g class="new" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="540" y="119" width="44" height="14" rx="1"/></g>
+<g class="new" fill="none" stroke="currentColor" stroke-width="1.6"><polyline points="584,126 640,126"/></g>
+<text x="648" y="130">CH2 → IDC 6</text>
+<g class="new"><text x="472" y="156" text-anchor="end">GP8</text></g>
+<g class="new" fill="none" stroke="currentColor" stroke-width="1.6"><polyline points="480,152 540,152"/></g>
+<g class="new" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="540" y="145" width="44" height="14" rx="1"/></g>
+<g class="new" fill="none" stroke="currentColor" stroke-width="1.6"><polyline points="584,152 640,152"/></g>
+<text x="648" y="156">CH3 → IDC 7</text>
+<g class="new"><text x="472" y="182" text-anchor="end">GP9</text></g>
+<g class="new" fill="none" stroke="currentColor" stroke-width="1.6"><polyline points="480,178 540,178"/></g>
+<g class="new" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="540" y="171" width="44" height="14" rx="1"/></g>
+<g class="new" fill="none" stroke="currentColor" stroke-width="1.6"><polyline points="584,178 640,178"/></g>
+<text x="648" y="182">CH4 → IDC 8</text>
+<g class="new"><text x="472" y="208" text-anchor="end">GP10</text></g>
+<g class="new" fill="none" stroke="currentColor" stroke-width="1.6"><polyline points="480,204 540,204"/></g>
+<g class="new" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="540" y="197" width="44" height="14" rx="1"/></g>
+<g class="new" fill="none" stroke="currentColor" stroke-width="1.6"><polyline points="584,204 640,204"/></g>
+<text x="648" y="208">CH5 → IDC 9</text>
+<g class="new"><text x="472" y="234" text-anchor="end">GP11</text></g>
+<g class="new" fill="none" stroke="currentColor" stroke-width="1.6"><polyline points="480,230 540,230"/></g>
+<g class="new" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="540" y="223" width="44" height="14" rx="1"/></g>
+<g class="new" fill="none" stroke="currentColor" stroke-width="1.6"><polyline points="584,230 640,230"/></g>
+<text x="648" y="234">CH6 → IDC 10</text>
+<g class="new"><text x="472" y="260" text-anchor="end">GP12</text></g>
+<g class="new" fill="none" stroke="currentColor" stroke-width="1.6"><polyline points="480,256 540,256"/></g>
+<g class="new" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="540" y="249" width="44" height="14" rx="1"/></g>
+<g class="new" fill="none" stroke="currentColor" stroke-width="1.6"><polyline points="584,256 640,256"/></g>
+<text x="648" y="260">CH7 → IDC 11</text>
+<g class="new"><text x="472" y="286" text-anchor="end">GP13</text></g>
+<g class="new" fill="none" stroke="currentColor" stroke-width="1.6"><polyline points="480,282 540,282"/></g>
+<g class="new" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="540" y="275" width="44" height="14" rx="1"/></g>
+<g class="new" fill="none" stroke="currentColor" stroke-width="1.6"><polyline points="584,282 640,282"/></g>
+<text x="648" y="286">CH8 → IDC 12</text>
+<g class="new"><text x="472" y="312" text-anchor="end">GP14</text></g>
+<g class="new" fill="none" stroke="currentColor" stroke-width="1.6"><polyline points="480,308 540,308"/></g>
+<g class="new" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="540" y="301" width="44" height="14" rx="1"/></g>
+<g class="new" fill="none" stroke="currentColor" stroke-width="1.6"><polyline points="584,308 640,308"/></g>
+<text x="648" y="312">CH9 → IDC 13</text>
+<g class="new"><text x="472" y="364" text-anchor="end">GP26</text></g>
+<g class="new" fill="none" stroke="currentColor" stroke-width="1.6"><polyline points="480,360 540,360"/></g>
+<g class="new" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="540" y="353" width="44" height="14" rx="1"/></g>
+<g class="new" fill="none" stroke="currentColor" stroke-width="1.6"><polyline points="584,360 640,360"/></g>
+<text x="648" y="364">CH10 → IDC 14</text>
+<g class="new"><text x="472" y="390" text-anchor="end">GP27</text></g>
+<g class="new" fill="none" stroke="currentColor" stroke-width="1.6"><polyline points="480,386 540,386"/></g>
+<g class="new" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="540" y="379" width="44" height="14" rx="1"/></g>
+<g class="new" fill="none" stroke="currentColor" stroke-width="1.6"><polyline points="584,386 640,386"/></g>
+<text x="648" y="390">CH11 → IDC 15</text>
+<g class="new"><text x="472" y="416" text-anchor="end">GP28</text></g>
+<g class="new" fill="none" stroke="currentColor" stroke-width="1.6"><polyline points="480,412 540,412"/></g>
+<g class="new" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="540" y="405" width="44" height="14" rx="1"/></g>
+<g class="new" fill="none" stroke="currentColor" stroke-width="1.6"><polyline points="584,412 640,412"/></g>
+<text x="648" y="416">CH12 → IDC 16</text>
+<g class="new" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="3 4"><rect x="530" y="84" width="64" height="344" rx="3"/></g>
+<text x="562" y="442" text-anchor="middle" class="t-muted">330 Ω + clamp</text>
+<text x="562" y="456" text-anchor="middle" class="t-muted">(detail below)</text>
+<text x="366" y="206" text-anchor="middle" class="t-muted">CH1–CH9:</text>
+<text x="366" y="222" text-anchor="middle" class="t-muted">one PIO</text>
+<text x="366" y="238" text-anchor="middle" class="t-muted">sampler</text>
+<text x="366" y="382" text-anchor="middle" class="t-muted">CH10–12:</text>
+<text x="366" y="398" text-anchor="middle" class="t-muted">ADC0–2</text>
+<g class="new"><text x="308" y="114">GP4 SDA</text></g>
+<g class="new"><text x="308" y="140">GP5 SCL</text></g>
+<g fill="none" stroke="currentColor" stroke-width="1.6"><polyline points="300,110 250,110 250,420"/></g>
+<g fill="none" stroke="currentColor" stroke-width="1.6"><polyline points="300,136 262,136 262,420"/></g>
+<text x="244" y="100" text-anchor="end" class="t-muted">I²C0</text>
+<g class="new" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="30" y="166" width="190" height="44" rx="3"/></g>
+<g class="new"><text x="40" y="184" class="t-strong">INA226 #1  0x40</text></g>
+<text x="40" y="201" class="t-muted">DUT USB 5 V, V and I</text>
+<g fill="none" stroke="currentColor" stroke-width="1.6"><polyline points="220,178 250,178"/></g>
+<g><circle cx="250" cy="178" r="3" fill="currentColor"/></g>
+<g fill="none" stroke="currentColor" stroke-width="1.6"><polyline points="220,192 262,192"/></g>
+<g><circle cx="262" cy="192" r="3" fill="currentColor"/></g>
+<g class="new" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="30" y="218" width="190" height="44" rx="3"/></g>
+<g class="new"><text x="40" y="236" class="t-strong">INA226 #2  0x41</text></g>
+<text x="40" y="253" class="t-muted">24 V main, V and I</text>
+<g fill="none" stroke="currentColor" stroke-width="1.6"><polyline points="220,230 250,230"/></g>
+<g><circle cx="250" cy="230" r="3" fill="currentColor"/></g>
+<g fill="none" stroke="currentColor" stroke-width="1.6"><polyline points="220,244 262,244"/></g>
+<g><circle cx="262" cy="244" r="3" fill="currentColor"/></g>
+<g class="new" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="30" y="270" width="190" height="44" rx="3"/></g>
+<g class="new"><text x="40" y="288" class="t-strong">ADS1115  0x48</text></g>
+<text x="40" y="305" class="t-muted">A0/A1 ← ÷2 ← IDC 3/4</text>
+<g fill="none" stroke="currentColor" stroke-width="1.6"><polyline points="220,282 250,282"/></g>
+<g><circle cx="250" cy="282" r="3" fill="currentColor"/></g>
+<g fill="none" stroke="currentColor" stroke-width="1.6"><polyline points="220,296 262,296"/></g>
+<g><circle cx="262" cy="296" r="3" fill="currentColor"/></g>
+<g class="new" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="30" y="322" width="190" height="44" rx="3"/></g>
+<g class="new"><text x="40" y="340" class="t-strong">MCP4725 #1  0x60/62</text></g>
+<text x="40" y="357" class="t-muted">VOUT → IDC 17 (AOUT1)</text>
+<g fill="none" stroke="currentColor" stroke-width="1.6"><polyline points="220,334 250,334"/></g>
+<g><circle cx="250" cy="334" r="3" fill="currentColor"/></g>
+<g fill="none" stroke="currentColor" stroke-width="1.6"><polyline points="220,348 262,348"/></g>
+<g><circle cx="262" cy="348" r="3" fill="currentColor"/></g>
+<g class="new" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="30" y="374" width="190" height="44" rx="3"/></g>
+<g class="new"><text x="40" y="392" class="t-strong">MCP4725 #2  base+1</text></g>
+<text x="40" y="409" class="t-muted">VOUT → IDC 18 (AOUT2)</text>
+<g fill="none" stroke="currentColor" stroke-width="1.6"><polyline points="220,386 250,386"/></g>
+<g><circle cx="250" cy="386" r="3" fill="currentColor"/></g>
+<g fill="none" stroke="currentColor" stroke-width="1.6"><polyline points="220,400 262,400"/></g>
+<g><circle cx="262" cy="400" r="3" fill="currentColor"/></g>
+<text x="40" y="452" class="t-muted">ADS1115 A2 ← TEMT6000 (light)</text>
+<g class="new"><text x="308" y="484">GP15</text></g>
+<g fill="none" stroke="currentColor" stroke-width="1.6"><polyline points="300,480 40,480"/></g>
+<text x="46" y="475" class="t-muted">1-Wire → DS18B20, 4.7 kΩ to 3V3</text>
+<g class="new"><text x="308" y="508">GP16</text></g>
+<g fill="none" stroke="currentColor" stroke-width="1.6"><polyline points="300,504 40,504"/></g>
+<text x="46" y="499" class="t-muted">→ relay IN1 (DUT USB VBUS)</text>
+<g class="new"><text x="308" y="532">GP17</text></g>
+<g fill="none" stroke="currentColor" stroke-width="1.6"><polyline points="300,528 40,528"/></g>
+<text x="46" y="523" class="t-muted">→ relay IN2 (24 V main)</text>
+<g class="new"><text x="308" y="556">GP18</text></g>
+<g fill="none" stroke="currentColor" stroke-width="1.6"><polyline points="300,552 40,552"/></g>
+<text x="46" y="547" class="t-muted">← INA226 ALERT, wired-OR</text>
+<text x="390" y="590" text-anchor="middle" class="t-muted">3V3(OUT) → all modules · VBUS → relay coils, A3144</text>
+<text x="876" y="56" text-anchor="middle" class="t-strong">DUT connector, 2×10 IDC</text>
+<text x="876" y="72" text-anchor="middle" class="t-muted">fixture side, shrouded</text>
+<g fill="none" stroke="currentColor" stroke-width="1.6"><rect x="764" y="88" width="224" height="276" rx="3"/></g>
+<g fill="none" stroke="currentColor" stroke-width="1.6"><rect x="758" y="200" width="6" height="52" rx="1"/></g>
+<g class="new" fill="none" stroke="currentColor" stroke-width="1"><rect x="774" y="98" width="100" height="22" rx="2"/></g>
+<g class="new"><text x="782" y="114"> 1 VSW</text></g>
+<g fill="none" stroke="currentColor" stroke-width="1"><rect x="878" y="98" width="100" height="22" rx="2"/></g>
+<text x="886" y="114"> 2 GND</text>
+<g class="new" fill="none" stroke="currentColor" stroke-width="1"><rect x="774" y="124" width="100" height="22" rx="2"/></g>
+<g class="new"><text x="782" y="140"> 3 SENSE_A</text></g>
+<g class="new" fill="none" stroke="currentColor" stroke-width="1"><rect x="878" y="124" width="100" height="22" rx="2"/></g>
+<g class="new"><text x="886" y="140"> 4 SENSE_B</text></g>
+<g class="new" fill="none" stroke="currentColor" stroke-width="1"><rect x="774" y="150" width="100" height="22" rx="2"/></g>
+<g class="new"><text x="782" y="166"> 5 CH1</text></g>
+<g class="new" fill="none" stroke="currentColor" stroke-width="1"><rect x="878" y="150" width="100" height="22" rx="2"/></g>
+<g class="new"><text x="886" y="166"> 6 CH2</text></g>
+<g class="new" fill="none" stroke="currentColor" stroke-width="1"><rect x="774" y="176" width="100" height="22" rx="2"/></g>
+<g class="new"><text x="782" y="192"> 7 CH3</text></g>
+<g class="new" fill="none" stroke="currentColor" stroke-width="1"><rect x="878" y="176" width="100" height="22" rx="2"/></g>
+<g class="new"><text x="886" y="192"> 8 CH4</text></g>
+<g class="new" fill="none" stroke="currentColor" stroke-width="1"><rect x="774" y="202" width="100" height="22" rx="2"/></g>
+<g class="new"><text x="782" y="218"> 9 CH5</text></g>
+<g class="new" fill="none" stroke="currentColor" stroke-width="1"><rect x="878" y="202" width="100" height="22" rx="2"/></g>
+<g class="new"><text x="886" y="218">10 CH6</text></g>
+<g class="new" fill="none" stroke="currentColor" stroke-width="1"><rect x="774" y="228" width="100" height="22" rx="2"/></g>
+<g class="new"><text x="782" y="244">11 CH7</text></g>
+<g class="new" fill="none" stroke="currentColor" stroke-width="1"><rect x="878" y="228" width="100" height="22" rx="2"/></g>
+<g class="new"><text x="886" y="244">12 CH8</text></g>
+<g class="new" fill="none" stroke="currentColor" stroke-width="1"><rect x="774" y="254" width="100" height="22" rx="2"/></g>
+<g class="new"><text x="782" y="270">13 CH9</text></g>
+<g class="new" fill="none" stroke="currentColor" stroke-width="1"><rect x="878" y="254" width="100" height="22" rx="2"/></g>
+<g class="new"><text x="886" y="270">14 CH10 ADC</text></g>
+<g class="new" fill="none" stroke="currentColor" stroke-width="1"><rect x="774" y="280" width="100" height="22" rx="2"/></g>
+<g class="new"><text x="782" y="296">15 CH11 ADC</text></g>
+<g class="new" fill="none" stroke="currentColor" stroke-width="1"><rect x="878" y="280" width="100" height="22" rx="2"/></g>
+<g class="new"><text x="886" y="296">16 CH12 ADC</text></g>
+<g class="new" fill="none" stroke="currentColor" stroke-width="1"><rect x="774" y="306" width="100" height="22" rx="2"/></g>
+<g class="new"><text x="782" y="322">17 AOUT1</text></g>
+<g class="new" fill="none" stroke="currentColor" stroke-width="1"><rect x="878" y="306" width="100" height="22" rx="2"/></g>
+<g class="new"><text x="886" y="322">18 AOUT2</text></g>
+<g fill="none" stroke="currentColor" stroke-width="1"><rect x="774" y="332" width="100" height="22" rx="2"/></g>
+<text x="782" y="348">19 GND</text>
+<g fill="none" stroke="currentColor" stroke-width="1"><rect x="878" y="332" width="100" height="22" rx="2"/></g>
+<text x="886" y="348">20 GND</text>
+<text x="876" y="382" text-anchor="middle" class="t-muted">pin 1 top-left · ≤ 30 cm</text>
+<text x="300" y="622" class="t-strong">Every channel, at the IDC header:</text>
+<g class="new"><text x="340" y="680" text-anchor="end">GPx</text></g>
+<g class="new" fill="none" stroke="currentColor" stroke-width="1.6"><polyline points="346,676 400,676"/></g>
+<g class="new" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="400" y="669" width="60" height="14" rx="1"/></g>
+<g class="new"><text x="430" y="662" text-anchor="middle">330 Ω</text></g>
+<g class="new" fill="none" stroke="currentColor" stroke-width="1.6"><polyline points="460,676 640,676"/></g>
+<g class="new"><circle cx="540" cy="676" r="3" fill="currentColor"/></g>
+<g class="new" fill="none" stroke="currentColor" stroke-width="1.6"><polyline points="540,676 540,663.0"/></g>
+<g class="new" fill="none" stroke="currentColor" stroke-width="1.6"><polygon points="532,663.0 548,663.0 540,650.0"/></g>
+<g class="new" fill="none" stroke="currentColor" stroke-width="1.6"><polyline points="532,650.0 548,650.0"/></g>
+<g class="new" fill="none" stroke="currentColor" stroke-width="1.6"><polyline points="540,650.0 540,636"/></g>
+<text x="540" y="630" text-anchor="middle">3V3</text>
+<g class="new" fill="none" stroke="currentColor" stroke-width="1.6"><polyline points="540,716 540,703.0"/></g>
+<g class="new" fill="none" stroke="currentColor" stroke-width="1.6"><polygon points="532,703.0 548,703.0 540,690.0"/></g>
+<g class="new" fill="none" stroke="currentColor" stroke-width="1.6"><polyline points="532,690.0 548,690.0"/></g>
+<g class="new" fill="none" stroke="currentColor" stroke-width="1.6"><polyline points="540,690.0 540,676"/></g>
+<g class="new"><use href="#gnd" xlink:href="#gnd" x="540" y="716"/></g>
+<g class="new"><text x="560" y="654">BAT54S</text></g>
+<text x="648" y="680">IDC pin</text>
+<text x="300" y="760" class="t-muted">330 Ω limits a fight to ≈10 mA; the clamp holds the pin to −0.3…3.6 V.</text>
+</svg>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1000" height="610" viewBox="0 0 1000 610" role="img" aria-label="RollerBlinds adapter. Fixture channels 1 to 3 clamp onto the TMC2209 STEP, DIR and enable pins; channel 4 taps the LED drive on the D2 side; channel 5 reads a hall sensor at the Open position. Channels 10 to 12 join the Fn, Up and Down key lines through a Y-adapter on the keypad connector, before the unit&#x27;s RC front end. SENSE_A and SENSE_B read the XIAO 5 V and 3V3 pins.">
+<style>
+  svg { color: #34464c; font-family: "IBM Plex Mono", ui-monospace, Menlo, Consolas, monospace; }
+  text { font-size: 12px; fill: currentColor; }
+  .t-strong { font-family: "IBM Plex Sans", -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; font-size: 13px; font-weight: 600; }
+  .t-muted { fill: #5b6b70; }
+  .new { color: #0b7a84; }
+  .new text { fill: #0b7a84; }
+  .warn { color: #9a5b00; }
+</style>
+<rect width="100%" height="100%" fill="#ffffff"/>
+<defs><g id="gnd"><line x1="0" y1="0" x2="0" y2="8" stroke="currentColor" stroke-width="1.6"/><line x1="-9" y1="8" x2="9" y2="8" stroke="currentColor" stroke-width="1.6"/><line x1="-6" y1="12" x2="6" y2="12" stroke="currentColor" stroke-width="1.6"/><line x1="-3" y1="16" x2="3" y2="16" stroke="currentColor" stroke-width="1.6"/></g></defs><g class="new" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="40" y="60" width="190" height="490" rx="3"/></g>
+<text x="135" y="52" text-anchor="middle" class="t-strong">fixture DUT connector</text>
+<g class="new"><text x="50" y="104">5  CH1  count</text></g>
+<g class="new"><text x="50" y="134">6  CH2  capture</text></g>
+<g class="new"><text x="50" y="164">7  CH3  capture</text></g>
+<g class="new"><text x="50" y="219">8  CH4  capture</text></g>
+<g class="new"><text x="50" y="269">9  CH5  capture</text></g>
+<g class="new"><text x="50" y="329">14 CH10 drive+ADC</text></g>
+<g class="new"><text x="50" y="359">15 CH11 drive+ADC</text></g>
+<g class="new"><text x="50" y="389">16 CH12 drive+ADC</text></g>
+<g class="new"><text x="50" y="484"> 3 SENSE_A</text></g>
+<g class="new"><text x="50" y="509"> 4 SENSE_B</text></g>
+<g class="new"><text x="50" y="534"> 2/19/20 GND</text></g>
+<g fill="none" stroke="currentColor" stroke-width="1.6"><rect x="620" y="70" width="170" height="110" rx="3"/></g>
+<text x="705" y="62" text-anchor="middle" class="t-strong">TMC2209 V1.3 (unit)</text>
+<g class="new" fill="none" stroke="currentColor" stroke-width="1.6"><polyline points="230,100 620,100"/></g>
+<g class="new"><circle cx="620" cy="100" r="3.5" fill="currentColor"/></g>
+<text x="630" y="104">STEP  ← XIAO D8</text>
+<g class="new" fill="none" stroke="currentColor" stroke-width="1.6"><polyline points="230,130 620,130"/></g>
+<g class="new"><circle cx="620" cy="130" r="3.5" fill="currentColor"/></g>
+<text x="630" y="134">DIR   ← XIAO D7</text>
+<g class="new" fill="none" stroke="currentColor" stroke-width="1.6"><polyline points="230,160 620,160"/></g>
+<g class="new"><circle cx="620" cy="160" r="3.5" fill="currentColor"/></g>
+<text x="630" y="164">EN̅    ← XIAO D9</text>
+<text x="612" y="92" text-anchor="end" class="t-muted">IC clamp</text>
+<g class="new" fill="none" stroke="currentColor" stroke-width="1.6"><polyline points="230,215 620,215"/></g>
+<g class="new"><circle cx="620" cy="215" r="3.5" fill="currentColor"/></g>
+<g fill="none" stroke="currentColor" stroke-width="1.6"><rect x="620" y="198" width="170" height="34" rx="3"/></g>
+<text x="630" y="219">D2 → 150 Ω → LED</text>
+<text x="612" y="207" text-anchor="end" class="t-muted">clamp, D2 side</text>
+<text x="800" y="219" class="t-muted">+ TEMT6000 over the LED</text>
+<g class="new" fill="none" stroke="currentColor" stroke-width="1.6"><polyline points="230,265 620,265"/></g>
+<g class="new" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="620" y="246" width="170" height="40" rx="3"/></g>
+<g class="new"><text x="630" y="262">A3144 hall (rig only)</text></g>
+<text x="630" y="278" class="t-muted">Open reference mark</text>
+<text x="800" y="262" class="t-muted">5 V supply, OC output</text>
+<text x="800" y="278" class="t-muted">pull-up 10 kΩ to 3V3</text>
+<g class="new" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="560" y="305" width="110" height="100" rx="3"/></g>
+<g class="new"><text x="615" y="297" text-anchor="middle" class="t-strong">Y-adapter</text></g>
+<g class="new" fill="none" stroke="currentColor" stroke-width="1.6"><polyline points="230,325 560,325"/></g>
+<g fill="none" stroke="currentColor" stroke-width="1.6"><polyline points="670,325 860,325"/></g>
+<text x="690" y="320" class="t-muted">Fn</text>
+<g class="new" fill="none" stroke="currentColor" stroke-width="1.6"><polyline points="230,355 560,355"/></g>
+<g fill="none" stroke="currentColor" stroke-width="1.6"><polyline points="670,355 860,355"/></g>
+<text x="690" y="350" class="t-muted">Up</text>
+<g class="new" fill="none" stroke="currentColor" stroke-width="1.6"><polyline points="230,385 560,385"/></g>
+<g fill="none" stroke="currentColor" stroke-width="1.6"><polyline points="670,385 860,385"/></g>
+<text x="690" y="380" class="t-muted">Down</text>
+<g fill="none" stroke="currentColor" stroke-width="1.6"><rect x="860" y="305" width="110" height="100" rx="3"/></g>
+<text x="915" y="350" text-anchor="middle" class="t-strong">membrane</text>
+<text x="915" y="368" text-anchor="middle" class="t-strong">keypad</text>
+<g fill="none" stroke="currentColor" stroke-width="1.6"><polyline points="615,405 615,432 700,432"/></g>
+<text x="622" y="424" class="t-muted">×3</text>
+<g fill="none" stroke="currentColor" stroke-width="1.6"><rect x="700" y="414" width="270" height="36" rx="3"/></g>
+<text x="710" y="436">unit input: 150 Ω + RC → D3/D4/D5</text>
+<text x="395" y="412" text-anchor="middle" class="t-muted">joins on the connector side, before the unit&#x27;s RC</text>
+<g fill="none" stroke="currentColor" stroke-width="1.6"><rect x="700" y="470" width="270" height="80" rx="3"/></g>
+<text x="960" y="490" text-anchor="end" class="t-strong">XIAO ESP32C6</text>
+<g class="new" fill="none" stroke="currentColor" stroke-width="1.6"><polyline points="230,480 680,480 680,492 700,492"/></g>
+<text x="710" y="496">5V (after 1N5822)</text>
+<g class="new" fill="none" stroke="currentColor" stroke-width="1.6"><polyline points="230,505 665,505 665,514 700,514"/></g>
+<text x="710" y="518">3V3</text>
+<g fill="none" stroke="currentColor" stroke-width="1.6"><polyline points="230,530 650,530 650,536 700,536"/></g>
+<text x="710" y="540" class="t-muted">GND / keypad common</text>
+<text x="40" y="590" class="t-muted">USB (relay ch1) and 24 V (relay ch2) also pass through the fixture: see the power diagram.</text>
+</svg>

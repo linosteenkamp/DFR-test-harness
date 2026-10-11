@@ -11,25 +11,19 @@ clears.
 Architecture and test design: [docs/DESIGN.md](docs/DESIGN.md).
 Where to buy each part: [docs/HARDWARE-SHOPPING.md](docs/HARDWARE-SHOPPING.md).
 
-## Wiring overview
+## Wiring diagrams
 
-```
- house LAN ──┬── Raspberry Pi 5 (bench) ── USB hub (powered) ──┬── SLOT1: DUT USB  ─┐  (VBUS via fixture relay)
-             │     eth0                                        ├── SLOT2: fixture Pico
-             │                                                 └── SLOT3/4: next DUT + fixture
-             └── SLZB-06 coordinator (PoE)  ← never on the Pi's USB
+The bench, with this repo's additions in teal:
 
-                         ┌─────────────────── Fixture ────────────────────┐
-  hub port ── USB-A ───► │ VBUS ─ INA226#1 ─ relay ch1 (NC) ─► DUT USB-C  │ ──► DUT (data lines straight through)
-                         │                                                │
-  24 V PSU ─ fuse ─────► │ INA226#2 ─ relay ch2 (NC) ─► 24 V out terminal │ ──► DUT main supply (blinds)
-                         │                                                │
-                         │ Pico: CH1–CH12, I²C (INA226 ×2, ADS1115,       │
-                         │       MCP4725 ×2), 1-Wire, relay drive         │
-                         │                                                │
-                         │ 2×10 DUT connector ◄── adapter cable ──────────┼──► DUT pins / connectors
-                         └────────────────────────────────────────────────┘
-```
+![Bench overview](docs/wiring/bench-overview.svg)
+
+**The diagrams are generated.** `docs/wiring/build.py` is the master copy.
+It writes `docs/wiring/wiring-diagram.html` (all diagrams on one page, light
+and dark theme) and the standalone SVGs embedded in this document. Change
+the drawing in `build.py`, run `python3 docs/wiring/build.py`, and commit the
+regenerated files together with the wiring change they describe. The style
+(palette, IBM Plex fonts, IEC symbols, teal for what's added) matches the
+DFR-RollerBlinds wiring diagrams.
 
 Three rules hold everywhere in this document:
 
@@ -138,6 +132,8 @@ go through the fixture, never directly to the Pi's header.
 
 ## Power chain
 
+![Fixture power paths](docs/wiring/fixture-power.svg)
+
 ```
 hub port VBUS ──► INA226#1 VIN+ ─► VIN− ──► relay ch1 COM ─► NC ──► DUT USB-C VBUS
                    (shunt 0.1 Ω)                                     │
@@ -201,6 +197,8 @@ mode a floating input or a dead Pico could energise the relay and cut DUT
 power, which is exactly the failure the NC wiring is meant to avoid.
 
 ## Fixture Pico pin-by-pin wiring
+
+![Fixture signals and DUT connector](docs/wiring/fixture-signals.svg)
 
 ### Pico pin table
 
@@ -358,6 +356,8 @@ step 7 and before every long soak:
 | **Nordic PPK2** (optional) | Source-meter mode, inserted in place of `VSW`/battery for the DUT | Its own USB into the Pi. µA sleep profiling for battery projects |
 
 ## Adapter: DFR-RollerBlinds
+
+![RollerBlinds adapter](docs/wiring/blinds-adapter.svg)
 
 Pin numbers come from `DFR-RollerBlinds/src/main.c` (v2.4.0 pin map) and the
 profile in DESIGN §6. Tap the **unit's own connectors and the driver's
