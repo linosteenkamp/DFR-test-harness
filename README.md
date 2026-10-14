@@ -1,5 +1,8 @@
 # DFR-test-harness
 
+> 🏠 **Bench dashboard: [home.steenkamps.org](https://home.steenkamps.org)** — Homer
+> start page linking to the services on the test-harness Pi.
+
 Hardware-in-the-loop test harness for the DFR family of ESP32-C6 Zigbee
 devices (RollerBlinds, DoorSensor, MoistureTracker, and future projects),
 built on a Raspberry Pi bench running
